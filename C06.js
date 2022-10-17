@@ -109,3 +109,19 @@ function lietKeSoChinhPhuongLe(array4){
 const ketQuaBai4 = lietKeSoChinhPhuongLe(arrayBai4)
 console.log("KetQuaBai4 ====> ", ketQuaBai4)
 
+//Bài 5: Tổng số chính phương
+//Tính tổng các số chính phương có trong mảng một chiều số nguyên.
+
+let arrayBai5 = arrayBai4;
+
+function timTongSoChinhPhuong(array5) {
+    let arraySoChinhPhuong = lietKeSoChinhPhuong(array5);
+    let tong = 0;
+    for(let index; index < arraySoChinhPhuong.length; index++) {
+        tong += arraySoChinhPhuong[index];
+    }
+    return tong
+}
+
+let ketQuaBai5 = timTongSoChinhPhuong(arrayBai5)
+console.log("KetQuaBai5 ====> ", ketQuaBai5)
